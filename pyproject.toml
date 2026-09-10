@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kalshi-edge-engine"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.116.1",
+  "uvicorn[standard]==0.35.0",
+  "httpx==0.28.1",
+  "pydantic-settings==2.10.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
